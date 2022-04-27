@@ -1,0 +1,285 @@
+/** Estrutura do site  **/
+
+body, html {
+	margin: 0;
+	font: 16px "Lato", sans-serif;
+	height: 100%;
+	background: #FAFAFA;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+#caixa-principal {
+	margin: 0 auto;
+	width: 1600px;
+	
+}
+
+@font-face {
+	font-family: American;
+	src: url(../fonts/american.woff);
+}
+
+/** Fundos **/
+
+
+.img1, .img2 {
+	height: 1000px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 1600px;
+}
+
+.img1 {
+	background-image: url(../imagens/canavial1.jpg);
+	border-radius: 25px 25px 0 0;
+	
+}
+
+.img2 {
+	background-image: url(../imagens/canavial4.png);
+
+}
+
+.arredondamento {
+	border-radius: 0 0 25px 25px;
+}
+
+/** Topo **/
+
+header {
+	height: 200px;
+	min-width: 900px;
+	margin: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	
+}
+
+#logo {
+	float: left;
+	background: url(../imagens/logo.png) no-repeat;
+	height: 150px;
+	width: 600px;
+	margin: 20px 0 20px 30px;
+	text-indent: -900px;
+}
+
+nav {
+	
+	
+
+	
+}
+
+nav ul.nav-topo a {
+	color: red;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-style: italic;
+	
+}
+
+nav ul.nav-topo a:hover {
+	color: #B43104;
+	
+	
+}
+
+nav ul.nav-topo {
+	margin-right: 30px;
+	list-style-type: none;
+	display: flex;
+	margin-top: 50px;
+	
+}
+
+nav ul.nav-topo li {
+	padding: 20px;
+	background-color: RGB(242, 242, 242) ;
+}
+
+
+
+/** Conteudos Principais  **/
+
+.conteudo-titulo {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 45%;
+}
+
+article a {
+	color: #B43104;
+}
+
+article a:hover {
+	color: #B43104;
+}
+
+.titulo {
+	font-size: 5em;
+	font-family: American;
+	background-color: RGB(242, 242, 242, 0.7);
+	padding: 30px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: #B43104;
+}
+
+.titulo:hover {
+	font-size: 7em;
+	border: 1px solid red;
+	transition: font-size 1s;
+}
+
+#conteudo {
+	margin: 20px 0;
+	height: 600px;
+	background-color: RGB(242, 242, 242);
+	width: 1600px;
+	font-family: "Helvetica", sans-serif;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.postagem{
+	margin: 15px;
+	width: 700px;
+	height: 500px;
+	background-color: #FAFAFA;
+	padding: 50px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	border-radius: 15px;
+	text-transform: uppercase;
+
+} 
+
+.postagem-2 {
+	margin: 15px;
+	width: 700px;
+	height: 550px;
+	background-color: #FAFAFA;
+	padding: 50px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border-radius: 15px;
+	text-transform: uppercase;
+	
+
+}
+
+.texto {
+	padding-bottom: 30px;
+}
+
+.postagem h2, .postagem-2 h2 {
+	color: red;
+	font-family: American;
+	font-size: 3.5em;
+}
+
+.postagem h4 {
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+.postagem a {
+	color: darkred;
+}
+
+.postagem a:hover {
+	color: red;
+}
+
+.postagem-2 a {
+	color: darkred;
+	font-size: 0.9em;
+
+}
+
+.postagem-2 a:hover {
+	color: red;
+}
+
+.verde {
+	color: green;
+
+}
+
+.marrom {
+	color: brown;
+}
+
+.cinza {
+	color: gray;
+}
+
+.preto {
+	color: black;
+}
+
+//* Rodape *//
+
+#rodape {
+	background-color: RGB(242, 242, 242);
+	width: 100%;
+	height: 200px;
+	border: 1px solid red;
+}
+
+#rodape {
+	background: RGB(242, 242, 242) url(../imagens/logo.png) no-repeat center;
+	width: 100%;
+	clear: both;
+	
+}
+
+.texto-rodape {
+	font-style: italic;
+	color:#190B07;
+	margin: 35px;
+	padding-top: 40px;
+	display: block;
+	
+}
+
+#rodape ul{
+	list-style-type: none;
+	
+}
+
+#rodape li{
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+#rodape a{
+	color: #190B07;
+	
+	text-transform: uppercase;
+}
+
+#rodape a:hover {
+	color: darkred;
+	text-decoration: none;
+}
+
+
