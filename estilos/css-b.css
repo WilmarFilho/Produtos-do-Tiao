@@ -3,13 +3,26 @@
 
 
 /** Extra small devices (portrait phones, less than 576px)**/
-@media (max-width: 575.98px) { 
+@media (max-width: 475.98px) { 
+	span.titulo, span.titulo1 {
+		font-size: 1.3em;
+	}
+
+	span.titulo:hover, span.titulo1:hover {
+		font-size: 1.5em;
+		border: 1px solid red;
+		transition: font-size 1s;
+	}
+
+}
+
+@media (min-width: 475.99px) and (max-width: 575.98px) { 
 	span.titulo, span.titulo1 {
 		font-size: 2em;
 	}
 
 	span.titulo:hover, span.titulo1:hover {
-		font-size: 2.4em;
+		font-size: 2.3em;
 		border: 1px solid red;
 		transition: font-size 1s;
 	}
@@ -127,16 +140,23 @@ a {
 
 /** Topo **/
 
-header nav {
-	background-color: rgb(255, 255, 255, .5);
-	
+body#home header nav ul a.ativo,
+body#pagina-produtos header nav ul a.ativo,
+body#contato header nav ul a.ativo {
+	color: #8A0808;
 }
+
+.logo {
+	width: 100%;
+}
+
+
 
 header, footer {
 	font-family: FreeMono, monospace;
 }
 
-header nav {
+header nav  {
 	background-color: rgb(255, 255, 255, .9);
 	font-size: 1.7em;
 	font-weight: 900;
@@ -245,6 +265,10 @@ footer nav {
 	font-size: 1.4em;
 	font-weight: 900;
 }
+
+
+
+
 
 
 
