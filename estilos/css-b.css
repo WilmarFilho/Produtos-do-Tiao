@@ -110,6 +110,12 @@ a {
     border-color: rgb(254,46,46);
 }
 
+@keyframes opacidade {
+	to {
+		opacity: 1;
+	}
+}
+
 /** Fundos **/
 
 .bann1, .bann2, .bann3, .bann4 {
@@ -148,9 +154,16 @@ body#contato header nav ul a.ativo {
 
 .logo {
 	width: 100%;
+	opacity: 0;
+	animation: opacidade 1.5s;
+	animation-fill-mode: both;
 }
 
-
+header {
+	opacity: 0;
+	animation: opacidade 1s;
+	animation-fill-mode: both;
+}
 
 header, footer {
 	font-family: FreeMono, monospace;
