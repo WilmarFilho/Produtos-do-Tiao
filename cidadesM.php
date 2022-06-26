@@ -1,0 +1,1 @@
+<span onclick="recuperaLojas('mato', 'mato grosso')" class="banner estado p-3 m-2">Campinas</span><span onclick="recuperaLojas('mato', 'mato grosso')" class="banner estado p-3 m-2">Belem</span><

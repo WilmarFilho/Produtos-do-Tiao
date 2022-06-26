@@ -251,11 +251,15 @@ a:hover.banner {
 	color: #B43104;
 }
 
+
+
 .titulo:hover, .titulo1:hover {
 	font-size: 6em;
 	border: 1px solid red;
 	transition: font-size 1s;
 }
+
+
 
 .postagem{
 	background-color: rgb(250,250,250, 0.8);

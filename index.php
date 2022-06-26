@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 	<html>
 		
 		<head lang="pt-br">
@@ -36,46 +36,9 @@
 
 			<header id="topo" > <!-- Inicio do topo -->
 				
-				<nav class="container-fluid navbar navbar-expand-md navbar-light ">	 <!-- Barra de Navegação -->
-				
-					<!-- Logo  -->
-
-					<div class="w-50 mx-auto my-auto">
-						<a style="text-indent: -900px;" class="navbar-brand" href="index.html">Produtos do Tião</a>
-						<a class="navbar-brand" href="index.html">
-							<img src="imagens/logo.png" height="100" class="logo">
-						</a>
-					
-					</div class='my-auto'>
-					<!-- Botão  -->
-
-					<button class="navbar-toggler" data-toggle="collapse" data-target="#navegação">
-						<i class="fa-solid fa-bars fa-2x text-danger"></i>
-					</button>
-				
-
-				
-					<!-- Navegação  -->
-
-					<div id="navegação" class="collapse navbar-collapse w-50 mx-auto my-auto ">	
-						<ul class="navbar-nav ml-auto" >
-							<li class="nav-item"><a class="ativo nav-link" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
-							<li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-							<li class="nav-item">
-								<a href="" class="btn btn-danger">
-									<i class="fa-brands fa-whatsapp text-white fa-2x"></i>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="https://www.instagram.com/tiao.produtos/" class="btn btn-danger">
-									<i class="fa-brands fa-instagram text-white fa-2x"></i>
-								</a>
-							</li>
-						</ul>
-					</div>	
-
-				</nav>  <!--  Fim da Barra de Navegação -->
+				<?php 
+					require_once 'menu.php'
+				?>
 
 			</header> <!-- Fim do topo -->
 
@@ -122,8 +85,8 @@
 				<section class='bann1 arredondamento row mx-auto'>  <!-- Inicio Sessão Cachaças -->
 							
 					<article class="col-12 d-flex align-items-center mb-5" style="height: 700px;">
-						<div class=" conteudo-titulo w-100 text-center  ">
-							<span class="titulo1 p-4"><a href="cachaças.html" class="banner">Cachaças artesanais</a></span>
+						<div class=" w-100 text-center  ">
+							<span class="titulo1 p-4"><a href="produtos.php?mostra=cachaça" class="banner">Cachaças artesanais</a></span>
 						</div>
 					</article>
 
@@ -149,7 +112,7 @@
 									</p>
 												
 									<button class="btn btn-danger btn-lg ">
-										<a href="pingas.html" class="text-white">Saiba mais ...</a>
+										<a href="produtos.php?mostra=cachaça" class="text-white">Saiba mais ...</a>
 									</button>
 												
 									<br>
@@ -180,7 +143,7 @@
 									</p>
 													
 									<button class="btn btn-danger btn-lg">
-										<a href="licores.html" class="text-white">Saiba mais ...</a>
+										<a href="produtos.php?mostra=cachaça" class="text-white">Saiba mais ...</a>
 									</button>
 													
 									<br>
@@ -232,7 +195,7 @@
 									</p>
 											
 									<button class="btn btn-danger btn-lg">
-										<a href="rapaduras.html" class="text-white">Saiba mais ...</a>
+										<a href="produtos.php?mostra=doce" class="text-white">Saiba mais ...</a>
 									</button>
 										
 								</div>
@@ -264,7 +227,7 @@
 									</p>
 											
 									<button class="btn btn-danger btn-lg">
-										<a href="melado.html" class="text-white">Saiba mais ...</a>
+										<a href="produtos.php?mostra=doce" class="text-white">Saiba mais ...</a>
 									</button>
 										
 								</div>
@@ -285,68 +248,9 @@
 				
 			</div> <!-- Fim dos Conteudos -->
 
-			<footer id="rodape"> <!-- Inicio do rodape -->
-				
-				<section id="rodape" class="container">
-					
-					<div class="row">
-
-						<article class="col-12">
-							
-							<span class="d-block font-italic text-monospace text-black-50  pt-3 m-3 text-center ">Copyright (c) 2022 PRODUTOS DO TIÂO <br>All Rights Reserved<br>This product is protected by copyright and distributed under licenses restricting copying, distribution, and decompilation.
-							</span>
-						
-						</article>
-
-						
-							
-
-
-
-						<nav id="navegação2" class="col-12 my-3">
-							
-							<div >
-
-								<ul class=" nav justify-content-around">
-									<li class="nav-item"><a href="home.html" class="nav-link text-danger">Home</a></li>
-									<li class="nav-item"><a href="produtos.html" class="nav-link text-danger">Produtos</a></li>
-									<li class="nav-item"><a href="contato.html" class="nav-link text-danger">Contato</a></li>
-										
-								</ul>
-
-							</div>
-
-						</nav>
-
-						<div class="col-12 ">
-							
-							<div class="text-center">
-								<a href="">
-									<i class="btn btn-danger fa-brands fa-whatsapp text-white fa-2x"></i>
-								</a>
-								<a href="https://www.instagram.com/tiao.produtos/">
-									<i class="btn btn-danger fa-brands fa-instagram text-white fa-2x"></i>
-								</a>
-							</div>
-
-						</div>
-
-						
-
-						<div class="col-12">
-
-							<img src="imagens/logo.png" class="d-block mx-auto img-fluid">
-
-						</div>
-
-					</div>
-
-					
-
-				</section>
-			
-			</footer> <!-- Fim do rodape -->
-
+				<?php 
+					require_once 'rodape.php'
+				?>
 		
 			<!-- Optional JavaScript -->
     		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
