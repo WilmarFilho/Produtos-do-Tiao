@@ -1,0 +1,1 @@
+<span onclick="recuperaLojas('porto', 'bahia')" class="banner estado p-3 m-2">Porto Seguro</span><span onclick="recuperaLojas('ilheus', 'bahia')" class="banner estado p-3 m-2">ilheus</span><

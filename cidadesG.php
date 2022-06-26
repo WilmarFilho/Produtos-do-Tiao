@@ -1,0 +1,1 @@
+<span onclick="recuperaLojas('anicuns', 'goias')" class="banner estado p-3 m-2">Anicuns</span><span onclick="recuperaLojas('Goiania', 'goias')" class="banner estado p-3 m-2">Goiania</span><span onclick="recuperaLojas('Trindade', 'goias')" class="banner estado p-3 m-2">Trindade</span>
