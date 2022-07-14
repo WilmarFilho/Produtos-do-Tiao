@@ -1,6 +1,6 @@
 			
 
-			<footer id="rodape"> <!-- Inicio do rodape -->
+			<footer id="rodape" class="mt-5"> <!-- Inicio do rodape -->
 				
 				<section id="rodape" class="container">
 					
@@ -25,7 +25,9 @@
 								<ul class=" nav justify-content-around">
 									<li class="nav-item"><a href="index.php" class="nav-link text-danger">Home</a></li>
 									<li class="nav-item"><a href="produtos.php?mostra=todos" class="nav-link text-danger">Produtos</a></li>
-									<li class="nav-item"><a href="contato.php" class="nav-link text-danger">Contato</a></li>
+									
+									<li class="nav-item"><a href="contato.php?inserir=sim" class="nav-link text-danger">Contato</a></li>
+									<li class="nav-item"><a href="parceiros.php" class="nav-link text-danger">Distribuidores</a></li>
 										
 								</ul>
 
@@ -35,9 +37,9 @@
 
 						
 
-						<div class="col-12">
+						<div class="col-11 d-flex justify-content-center mx-auto ">
 
-							<img src="imagens/logo.png" class="d-block mx-auto img-fluid">
+							<img src="imagens/logo.png" class="mx-auto img-fluid">
 
 						</div>
 

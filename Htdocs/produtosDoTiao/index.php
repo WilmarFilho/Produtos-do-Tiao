@@ -16,7 +16,7 @@
 			<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
 			<!-- Estilo custom -->
-			<link rel="stylesheet" type="text/css" href="estilos/css-b.css"> 
+			<link rel="stylesheet" type="text/css" href="estilos/estilos_custom.css"> 
 			
 			<!-- Normalize -->
 			<link rel="stylesheet" type="text/css" href="estilos/normalize.css">
@@ -28,11 +28,17 @@
 			<!-- Icones -->
 			<script src="https://kit.fontawesome.com/9d7842dfbe.js" crossorigin="anonymous"></script>
 
+			<style type="text/css">
+				
+				
+
+			</style>
+
 
 
 		</head>
 		
-		<body id="home">
+		<body id="home" style="background: url(imagens/back.jpg);">
 
 			<header id="topo" > <!-- Inicio do topo -->
 				
@@ -44,9 +50,9 @@
 
 			
 
-			<section  id="carrosel" class="my-5 ">
+			<section  id="carrosel" class="animacao my-5   " >
 
-							<div data-interval= 2000 id="carousel" class="align-self-center carousel slide" data-ride='carousel'>
+							<div data-interval= 2000 id="carousel" class=" carousel slide" data-ride='carousel'>
 								
 								<ol class="carousel-indicators"> 
 									<li data-target='#carousel' data-slide-to='0' class="active"></li>
@@ -54,21 +60,21 @@
 									<li data-target='#carousel' data-slide-to='2'></li>
 								</ol>
 
-								<div class="carousel-inner ">
+								<div class="carousel-inner  ">
 									<div class="carousel-item active">
-										<img src="imagens/img1.jpeg" height="600" class="w-100">
+										<img src="imagens/img1.jpeg"  class="w-100 img-slide">
 									</div>
 
 									<div class="carousel-item ">
-										<img src="imagens/img2.jpeg" height="600" class="w-100">
+										<img src="imagens/img2.jpeg"  class="w-100 img-slide">
 									</div>
 
 									<div class="carousel-item ">
-										<img src="imagens/img3.jpeg" height="600" class="w-100">
+										<img src="imagens/img3.jpeg"  class="w-100 img-slide">
 									</div>
 								</div>
 
-								<a href="#carousel" class="carousel-control-prev" data-slide='prev'>
+								<a href="#carousel" class=" carousel-control-prev" data-slide='prev'>
 									<span class="carousel-control-prev-icon"></span>
 								</a>
 
@@ -76,38 +82,102 @@
 									<span class="carousel-control-next-icon"></span>
 								</a>
 
-							</div>
+							</div> 
 							
 			</section> 
 
-			<div id="conteudos" class="container-fluid">	<!-- Inicio dos Conteudos -->
+			<section id="sobre" class="animacao mb-5 container-fluid bordas-sobre-2"  >
 				
-				<section class='bann1 arredondamento row mx-auto'>  <!-- Inicio Sessão Cachaças -->
+				<div class="row mx-auto">
+
+					<div class="col-12 bordas-sobre py-2 text-center" >
+						<h1 class="h1-sobre ">Conheça a <br><span class="custom-font">Produtos do tião</span></h1>
+					</div>
+					
+					<div class="col-12 col-lg-6 row py-4  mx-auto" >
+						
+						<div class=" col-5 my-2"><img src="imagens/cliente1.jpeg" class="img-fluid" ></div>
+						<div class=" col-7 my-2"><img src="imagens/cliente5.jpg" class="img-fluid" ></div>
+						<div class="col-7 my-2"><img src="imagens/cliente4.jpeg"  class="img-fluid" ></div>
+						<div class="d-xl-none col-5 my-2"><img src="imagens/mini-pinga/img1.jpeg" class="img-fluid" ></div>
+						<div class=" col-5 my-2"><img src="imagens/rapadura/img1.jpeg" class="img-fluid" ></div>
+						<div class="d-xl-none col-7 my-2"><img src="imagens/cliente3.jpeg"  class="img-fluid"></div>
+
+					
+					</div>
+
+					<div class="col-12 col-lg-6 mt-1 text-center bordas-sobre  p-5 texto-sobre align-self-center d-flex flex-column">
+						<h3 class="h3-sobre">Quem somos</h3>
+						<p class="p-sobre">Somos uma pequena empresa  do interior de Goiás e já abrangimos 3 estados om nossos produtos artesanais</p>
+						<h3 class="h3-sobre">Nossos produtos</h3>
+						<p class="p-sobre">Cada produto feito artesanalemnte e com todo cuidado para nosso clientes e distribuidores, desde o corte da cana até a embalagem. Temos pingas, licores, rapaduras e etc</p>
+						<h3 class="h3-sobre">Atendimento</h3>
+						<p class="p-sobre">Para nós o cliente vem em primeiro lugar ! Temos nossas redes sociais <br>
+								<a href="" class="btn btn-danger btn-sm">
+									<i class="fa-brands fa-whatsapp text-white fa-2x"></i>
+								</a> <a href="https://www.instagram.com/tiao.produtos/" class="btn btn-danger btn-sm">
+									<i class="fa-brands fa-instagram text-white fa-2x"></i>
+								</a><br> e nossa pagina de <span class="custom-font"><a href="contato.php">contato</a></span> a  disposição para clientes e distribuidores!</p>
+
+						<p class="mt-5 veja-mais">Veja mais sobre nossos <span class="custom-font"><a href="#cachacas">produtos</a></span> ou saiba quem são nossos <span class="custom-font"><a href="parceiros.php">distribuidores</a></span> <br>
+						<a href="#cachacas"><i  class="fa-solid fa-angles-down fa-1x"></i></a>
+						<a href="#cachacas"><i  class="fa-solid fa-angles-down fa-1x"></i></a>
+						<a href="#cachacas"><i  class="fa-solid fa-angles-down fa-1x"></i></a></p>
+					</div>
+
+				</div>
+
+
+			</section>
+
+			
+
+
+
+
+
+
+
+
+			<div id="cachacas" style="height: 50px"></div>
+
+			<section  class='bann5 titulo-conteudo   mb-5 d-flex align-items-center justify-content-center' >  <!-- Inicio Sessão Cachaças -->
 							
-					<article class="col-12 d-flex align-items-center mb-5" style="height: 700px;">
-						<div class=" w-100 text-center  ">
-							<span class="titulo1 p-4"><a href="produtos.php?mostra=cachaça" class="banner">Cachaças artesanais</a></span>
-						</div>
+					<article>
+							
+							<h1 class="titulo1"><a href="produtos.php?mostra=cachaça" class="banner">Cachaças </a></h1>
+						
+						
 					</article>
 
-					<section class="container col-12"> 
+			</section>  <!-- Fim Sessão Cachaças -->
+
+			<div id="conteudos" class="container-fluid ">	<!-- Inicio dos Conteudos -->
+
+				
+				
+				<section class='bann1 arredondamento '>  <!-- Inicio Sessão Cachaças -->
+							
+					
+
+					<section class=""> 
 						
-						<div class="row justify-content-around">
+						<div class="row justify-content-around ">
 										
-							<article class="text-center col-md-5 postagem m-3 p-4">
+							<article class="text-center col-md-5 col-10 postagem m-3 p-4">
 											
 								<div >
 												
-									<h2 class="text-danger text-uppercase">Pingas do Tião <br> no 12</h2>
+									<h2 class="h2-postagem text-danger text-uppercase">Pingas do Tião <br> no 12</h2>
 												
 									<h4 class="lead font-weight-bold text-uppercase">A melhor cachaça artesanal de Goiás</h4>
 												
 									<p class="lead">
 													
 										Sabores 
-										<span class="border rounded p-1 text-white-50 bg-secondary font-weight-bold">Prata</span> 
+										<span class=" p-1 text-secondary  font-weight-bold">Prata</span> 
 										e 
-										<span class="border rounded p-1 text-warning bg-secondary font-weight-bold">Ouro</span>
+										<span class=" p-1 text-warning  font-weight-bold">Ouro</span>
 
 									</p>
 												
@@ -117,28 +187,28 @@
 												
 									<br>
 												
-									<img src="imagens/mini-pinga.png" class="col-8 mt-5 img-fluid" >
+									<img src="imagens/mini-pinga.png" class="col-10 mt-5 img-fluid" >
 												
 								</div>
 
 							</article>
 
-							<article class="text-center col-md-5 postagem m-3 p-4">
+							<article class="text-center col-md-5 col-10 postagem m-3 p-4">
 												
 								<div>
 													
-									<h2 class="text-danger text-uppercase">Licores do Tião <br> no 12</h2>
+									<h2 class="h2-postagem text-danger text-uppercase">Licores do Tião <br> no 12</h2>
 													
 									<h4 class="lead font-weight-bold text-uppercase">Licores exclusivos com a fragância da caninha do tião</h4>
 													
 									<p class="lead">
 														
 										Sabores 
-										<span class="border rounded p-1 roxo bg-secondary font-weight-bold">Jabuticaba</span>
+										<span class="p-1 roxo font-weight-bold">Jabuticaba</span>
 										,
-										<span class="border rounded p-1 text-dark bg-secondary font-weight-bold">Rapadura</span>
+										<span class="p-1 text-dark font-weight-bold">Rapadura</span>
 										e 
-										<span class="border rounded p-1 text-warning bg-secondary font-weight-bold">Tamarindo</span>
+										<span class="p-1 text-warning font-weight-bold">Tamarindo</span>
 													
 									</p>
 													
@@ -160,36 +230,47 @@
 
 				</section>  <!-- Fim Sessão Cachaças -->
 
+			</div>
+
+			<section  class='bann5 titulo-conteudo   mb-5 d-flex align-items-center justify-content-center mt-5'>  <!-- Inicio Sessão Cachaças -->
+							
+					<article>
+							
+							<h1 class="titulo1"><a href="produtos.php?mostra=doce" class="banner">Doces </a></h1>
+						
+						
+					</article>
+
+			</section>  <!-- Fim Sessão Cachaças -->
+
+			<div id="conteudos" class="container-fluid">	<!-- Inicio dos Conteudos -->
+
 				<section class='bann2 arredondamento my-2 row mx-auto'>
 							
-					<article class="col-12 d-flex align-items-center mb-5" style="height: 700px;">
-						<div class="conteudo-titulo w-100 text-center">
-							<span class="titulo p-4"><a href="doces.html" class="banner">Doces artesanais</a></span>
-						</div>
-					</article>
+					
 						
 					<section class="container col-12">
 								
 						<div class="row justify-content-around arredondamento ">
 									
-							<article class="row text-center col-md-5 postagem m-3 p-4">
+							<article class="row text-center col-md-5 col-10 postagem m-3 p-4">
 										
 								<div class="col-md-11">
 											
-									<h2 class="text-danger text-uppercase">Rapaduras <br> do Tião</h2>
+									<h2 class="h2-postagem text-danger text-uppercase">Rapadura <br> do Tião</h2>
 											
 									<h4 class="lead font-weight-bold text-uppercase">Um doce 100% natural e artesanal</h4>
 											
 									<p class="lead">
 												
 										Sabores 
-										<span class="border rounded p-1 text-success bg-secondary font-weight-bold">Pura</span>
+										<span class=" p-1 text-success font-weight-bold">Pura</span>
 										,
-										<span class="border rounded p-1 text-white bg-secondary font-weight-bold">Leite</span>
+										<span class="p-1 text-secondary font-weight-bold">Leite</span>
 										,
-										<span class="border rounded p-1 text-dark bg-secondary font-weight-bold">Gengibre</span>
+										<span class="p-1 text-dark font-weight-bold">Gengibre</span>
 										e
-										<span class="border rounded p-1 text-warning bg-secondary font-weight-bold">Amendoim</span>
+										<span class="p-1 text-warning font-weight-bold">Amendoim</span>
 
 											
 									</p>
@@ -202,7 +283,7 @@
 
 								<div class="col-md-11">
 										
-									<img src="imagens/rap.png" class="col-10 mt-5 img-fluid">
+									<img src="imagens/rap.png" class=" mt-5 img-fluid">
 										
 								</div>	
 
@@ -211,18 +292,18 @@
 									
 
 									
-							<article class="row text-center col-md-5 postagem m-3 p-4">
+							<article class="row text-center col-md-5 col-10 postagem m-3 p-4">
 										
 								<div class="col-md-11">
 											
-									<h2 class="text-danger text-uppercase">Melado <br> do Tião</h2>
+									<h2 class="h2-postagem text-danger text-uppercase">Melado <br> do Tião</h2>
 											
 									<h4 class="lead font-weight-bold text-uppercase">Melado natural da cana de açucar cremoso</h4>
 
 									<p class="lead">
 												
 										Sabor
-										<span class="border rounded p-1 text-success bg-secondary font-weight-bold">Puro</span>
+										<span class="p-1 text-success font-weight-bold">Puro</span>
 											
 									</p>
 											
@@ -234,7 +315,7 @@
 
 								<div class="col-md-11">
 										
-									<img src="imagens/melado.png" class="col-10 mt-5 img-fluid">
+									<img src="imagens/melado.png" class="img-fluid mt-5 ">
 										
 								</div>	
 									
@@ -242,15 +323,19 @@
 								
 						</div>
 
-					</section>  <!-- Inicio Sessão Doces -->
+					</section>  <!-- Inicio Sessão Doces --> <!-- Inicio Sessão Doces -->
 
 				</section> <!-- Fim Sessão Doces -->
 				
 			</div> <!-- Fim dos Conteudos -->
 
+			<!-- Rodape -->
+
 				<?php 
 					require_once 'rodape.php'
 				?>
+
+			<!-- Fim rodape -->
 		
 			<!-- Optional JavaScript -->
     		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
