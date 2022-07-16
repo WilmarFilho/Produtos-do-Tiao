@@ -1,78 +1,38 @@
 <?php
-	
-	
 	require_once	'controler_da_view.php';
-
-		
-
-
-	
-
 ?>
 	<html>
 		
-		<head lang="pt-br">
-			
-			<!-- Meta tags -->
-
-			<meta charset="utf-8">
-			
+		<head lang="pt-br">	
+			<meta charset="utf-8"> <!-- Meta tags -->
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-			
-			<title>Produtos do Tião - Caninha do Tião Ouro</title>
+			<title>Produtos do Tião - Produto</title>
 			<link rel="icon" href="imagens/favicon.jpg">
-			
-			<!-- Bootstrap4 -->
-			<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
-			<!-- Estilo custom -->
-			<link rel="stylesheet" type="text/css" href="estilos/estilos_custom.css"> 
-			
-			<!-- Normalize -->
-			<link rel="stylesheet" type="text/css" href="estilos/normalize.css">
-
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!-- Bootstrap4 -->
+			<link rel="stylesheet" type="text/css" href="estilos/estilos_custom.css">  <!-- Estilo custom -->
+			<link rel="stylesheet" type="text/css" href="estilos/normalize.css"> <!-- Normalize -->
 			<!--[if lt IE 9]>
 				<script src="Js/html5shiv.js"></script>
 			<![endif]-->
-
-			<!-- Icones -->
-			<script src="https://kit.fontawesome.com/9d7842dfbe.js" crossorigin="anonymous"></script>
-
-
+			<script src="https://kit.fontawesome.com/9d7842dfbe.js" crossorigin="anonymous"></script> <!-- Icones -->
 		</head>
 		
-		<body id="pagina-produtos" style="background: url(imagens/back.jpg);">
-
-			
+		<body id="pagina-todos-produtos">
 			<header id="topo" > <!-- Inicio do topo -->
-				
 				<?php 
 					require_once 'menu.php'
 				?>
-
 			</header> <!-- Fim do topo -->
-
-
-		
-
 				
-			<div id="produtos" class="container-fluid ">	<!-- Inicio dos Conteudos -->
-
+			<div id="todos-produtos" class="container-fluid ">	<!-- Inicio do Conteudo do Produto -->
 				<?php foreach($produtos as $indice => $produto) {  ?>
-
 					<?php if($produto->id == $_GET['produto']) { ?>
-				
 						<div class="row text-center">
-							
-							<div class="col-md-12 my-5">
-									
+							<div class="col-md-12 my-5">	
 								<div>
-
-									<h2 class="text-danger"><?=$produto->nome?></h2>
+									<h2 class="text-danger custom-font"><?=$produto->nome?></h2>
 									<h3 class="text-warning"><?=$produto->sabor?></h3>
-
 								</div>
-
 							</div>
 
 							<div class="col-md-12">
@@ -80,30 +40,19 @@
 							</div>
 
 							<div class="col-md-4  ">
-								
 								<div class="row justify-content-center">
-									
-									
-
 								</div>
-
 							</div>
-
 						</div>
-
 					<?php } ?>
-
 				<?php } ?>
-				
-			</div> <!-- Fim dos Conteudos -->
+			</div> <!-- Fim do Conteudo do Produto -->
 
-				<?php 
-					require_once 'rodape.php'
-				?>
-
-
-
-
+			<!--Rodape-->
+			<?php 
+				require_once 'rodape.php'
+			?>
+			<!--Fim Rodape-->
 
 			<!-- Optional JavaScript -->
     		<!-- jQuery first, then Popper.js, then Bootstrap JS -->

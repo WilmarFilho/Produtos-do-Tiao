@@ -1,50 +1,48 @@
 /** Estrutura Responsiva **/
-
-
-
 /** Extra small devices (portrait phones, less than 576px)**/
 @media (max-width: 475.98px) { 
-	span.titulo, span.titulo1 {
-		font-size: 4.5em;
-	}
-
+		/**index**/
+		/**produtos**/
+	
+	/**topo**/
+	
 	img.logo {
 		height: 90px;
 	}
 
-	section#carrosel {
-		height: 300px;
-
+	button.margin-button {
+		margin-left: auto !important;
+		margin-right: auto !important;
 	}
-
-
-	img.img-slide {
-		height: 300px;
-	}
-
-	
 
 	button.btn-menu {
 		font-size: 3.5em;
 	}
 
-	h2.h2-postagem {
-		font-family: American;
-		font-size: 4em;
-	}
-
 	div#navegação {
 		font-size: 6em;
 	}
+	
+	/**carrosel**/
+	
+	section#carrosel {
+		height: 300px;
 
+	}
+
+	img.img-slide {
+		height: 300px;
+	}
+	
+	/**sobre**/
+	
 	div.bordas-sobre {
-		border-bottom: 4px solid darkred;
-		border-top: 4px solid darkred;
+		border-top: 4px double darkred;
+		border-bottom: 4px double darkred;
 	
 	}
 
 	section.bordas-sobre-2 {
-		
 		border: none;
 	}
 
@@ -56,9 +54,30 @@
 		font-size: 0.6em;
 	}
 
-	h1.titulo1 {
-		font-size: 6em;
+	/**conteudos/produtos**/
+
+	article.titulo-conteudo {
+		font-size: 3em;
 		
+	}
+
+	article.titulo-conteudo- {
+		font-size: 2em;
+		font-family: American;
+		text-shadow: 5px 5px 8px #FFF;
+		border: 20px  solid black;
+		border-right: none;
+		border-left: none;
+		border-image: url('../imagens/cana.jpg')  150 round;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		color: #B43104;
+		font-weight: 900;
+	}
+	
+	h2.h2-postagem {
+		font-family: American;
+		font-size: 4em;
 	}
 
 	h2.h2-produto {
@@ -66,7 +85,7 @@
 		font-family: american;
 	}
 
- 	section#rapadura h2.h2-produto,
+	section#rapadura h2.h2-produto,
  	section#licor h2.h2-produto {
 		font-size: 2.3em;
 		font-family: american;
@@ -98,6 +117,24 @@
 		font-weight: 300;
 	}
 
+	img.img-produto {
+		height: 300px;
+	}
+
+	img.img-rap {
+		height: 150px;
+	}
+
+
+		/**contato**/
+		/**distribuidores**/
+
+	h5.h5-card {
+		font-family: American;
+		font-size: 2em;
+		letter-spacing: 1;
+	}
+		
 	h2.legenda-titulo {
 		font-size: 3.3em;
 		font-family: American;
@@ -123,16 +160,26 @@
 		animation-fill-mode: both;
 
 	}
-
-
-
-
 }
-
 @media (min-width: 475.99px) and (max-width: 575.98px) { 
-	span.titulo, span.titulo1 {
-		font-size: 2.3em;
+		/**index**/
+		/**produtos**/
+	/**topo**/
+	
+	button.btn-menu {
+		font-size: 3.5em;
 	}
+
+	button.margin-button {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	div#navegação {
+		font-size: 6em;
+	}
+
+	/**carrosel**/
 
 	section#carrosel {
 		height: 300px;
@@ -142,24 +189,12 @@
 		height: 300px;
 	}
 
-	
+	/**sobre**/
 
-	button.btn-menu {
-		font-size: 3.5em;
-	}
-
-	h2.h2-postagem {
-		font-family: American;
-		font-size: 4em;
-	}
-
-	div#navegação {
-		font-size: 6em;
-	}
 
 	div.bordas-sobre {
-		border-bottom: 4px solid darkred;
-		border-top: 4px solid darkred;
+		border-top: 4px double darkred;
+		border-bottom: 4px double darkred;
 	
 	}
 
@@ -176,10 +211,30 @@
 		font-size: 0.6em;
 	}
 
-	h1.titulo1 {
-		font-size: 6em;
-		
-		
+
+	/**conteudos/produtos**/
+
+	h2.h2-postagem {
+		font-family: American;
+		font-size: 4em;
+	}
+
+	article.titulo-conteudo {
+		font-size: 3em;
+	}
+
+	article.titulo-conteudo- {
+		font-size: 2em;
+		font-family: American;
+		text-shadow: 5px 5px 8px #FFF;
+		border: 20px  solid black;
+		border-right: none;
+		border-left: none;
+		border-image: url('../imagens/cana.jpg')  150 round;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		color: #B43104;
+		font-weight: 900;
 	}
 
 	h2.h2-produto {
@@ -219,6 +274,24 @@
 		font-size: 1.1em;
 	}
 
+	img.img-produto {
+		height: 330px;
+	}
+
+	img.img-rap {
+		height: 150px;
+	}
+
+		/**contato**/
+		/**distribuidores**/
+
+	h5.h5-card {
+		font-family: American;
+		font-size: 2em;
+		letter-spacing: 1;
+	}
+
+
 	h2.legenda-titulo {
 		font-size: 3.3em;
 		font-family: American;
@@ -244,52 +317,24 @@
 		animation-fill-mode: both;
 
 	}
-
-	
 }
-
-/** Small devices (landscape phones, 576px and up)**/
 @media (min-width: 576px) and (max-width: 767.98px) { 
-	span.titulo, span.titulo1 {
-		font-size: 3.1em;
-	}
-
-	
-
-	
-}
-
-/** Medium devices (tablets, 768px and up)**/
-@media (min-width: 768px) and (max-width: 991.98px) { 
-	span.titulo, span.titulo1 {
-		font-size: 4.2em;
+	img.img-produto {
+		height: 400px;
 	}
 }
 
-/** Large devices (desktops, 992px and up)**/
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-	span.titulo, span.titulo1 {
-		font-size: 6.5em;
-	}
-}
-
-/** Extra large devices (large desktops, 1200px and up)**/
-@media (min-width: 1200px) { 
-	span.titulo, span.titulo1 {
-		font-size: 7.9em;
-	}
-}
-
-/** Estrutura do Site *//
-
-body, html {
-	margin: 0;
-	font: 16px "Lato", sans-serif;
-	background-color: #F8FBEF;
-}
+	/** Estrutura do Site *//
 
 body {
-	background: url(imagens/back.jpg);
+	background: url(../imagens/back.jpg);
+	margin: 0;
+}
+
+
+body {
+	background: url(../imagens/back.jpg);
+	margin: 0;
 }
 
 a {
@@ -302,16 +347,84 @@ a {
 	src: url(../fonts/american.woff);
 }
 
-.navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.5);
-    border-color: rgb(254,46,46);
-}
-
 @keyframes opacidade {
 	to {
 		opacity: 1;
 	}
 }
+
+.animacao {
+	opacity: 0;
+	animation: opacidade 1s;
+	animation-fill-mode: both;
+}
+
+.custom-font {
+	font-family: american;
+	text-transform: uppercase;
+	color: darkred;
+}
+
+//*Menu**/
+
+.logo {
+	opacity: 0;
+	animation: opacidade 1.5s;
+	animation-fill-mode: both;
+	
+}
+
+.btn-menu {
+	font-size: 6em;
+}
+
+header {
+	opacity: 0;
+	animation: opacidade 1s;
+	animation-fill-mode: both;
+}
+
+#navegação {
+	font-size: 8em;
+}
+
+header, footer {
+	font-family: FreeMono, monospace;
+}
+
+header nav  {
+	font-size: 0.2em;
+	font-weight: 900;
+	background-color: rgb(255, 255, 255, 0.8);
+}
+
+header nav li {
+	padding: 0 15px;
+}
+
+.margin-button {
+	margin-left: auto !important;
+	margin-right: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #8A0808;
+    transition: color .5s;
+
+}
+.navbar-light .navbar-nav .nav-link {
+    color: red;
+
+}
+
+//* Rodape *//
+
+footer nav {
+	font-size: 1.4em;
+	font-weight: 900;
+}
+
+			/**Index/produtos**/
 
 /** Fundos **/
 
@@ -339,125 +452,25 @@ a {
 
 .bann5 {
 	background-image:  url(../imagens/canavial12.jpg);
-	
-
 }
-
-
 
 .arredondamento {
 	border-radius: 20px;
 }
 
-/** Topo **/
 
-body#home header nav ul a.ativo,
-body#pagina-produtos header nav ul a.ativo,
-body#contato header nav ul a.ativo {
-	color: #8A0808;
-}
-
-.logo {
-	opacity: 0;
-	animation: opacidade 1.5s;
-	animation-fill-mode: both;
-	
-}
-
-.btn-menu {
-	font-size: 6em;
-}
-
-header {
-	opacity: 0;
-	animation: opacidade 1s;
-	animation-fill-mode: both;
-	margin-left: -15px;
-	margin-right: -25px;
-}
-
-#navegação {
-	font-size: 8em;
-}
-
-header, footer {
-	font-family: FreeMono, monospace;
-}
-
-header nav  {
-	font-size: 0.2em;
-	font-weight: 900;
-}
-
-header nav li {
-	padding: 0 15px;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #8A0808;
-    transition: color .5s;
-
-}
-.navbar-light .navbar-nav .nav-link {
-    color: red;
-
-}
-
-
-
-/** Conteudos Principais  **/
+/**carrosel**/
 
 #carrosel {
 	height: 550px;
-	margin-left: -15px;
-	margin-right: -28px;
+	
 }
 
 .img-slide {
 	height: 550px;
 }
 
-.titulo-conteudo {
-	margin-left: -15px;
-	margin-right: -28px;
-	height: 250px;
-
-}
-
-.bordas-sobre {
-	
-	
-}
-
-.bordas-sobre-2 {
-	border-bottom: 4px solid darkred;
-	border-top: 4px solid darkred;
-	
-}
-
-.texto-sobre {
-	
-	font-size: 2.5em;
-	font-weight: 300;
-
-}
-
-.veja-mais {
-	font-size: 1.25rem;
-	font-weight: 600;
-	background-color: rgb(255,255,255, 0.3);
-	padding: 10px;
-	border-radius: 10px;
-	box-shadow: 5px 5px 1em darkred;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-style: italic;
-}
-
-.custom-font {
-	font-family: american;
-	text-transform: uppercase;
-	color: darkred;
-}
+/**sobre**/
 
 .h1-sobre {
 	font-family: Impact, fantasy;
@@ -491,17 +504,45 @@ header nav li {
 	color: darkred;
 }
 
+.bordas-sobre {
 
+}
 
-#produtos {
+.bordas-sobre-2 {
+	border: 50px  solid black;
+	border-right: none;
+	border-left: none;
+	border-image: url('../imagens/cana.jpg')  150 round;
 	
+	
+}
+
+.texto-sobre {
+	font-size: 2.5em;
+	font-weight: 300;
+}
+
+.veja-mais {
+	font-size: 1.25rem;
+	font-weight: 600;
+	background-color: rgb(255,255,255, 0.3);
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 1em darkred;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+}
+
+/**conteudos**/
+
+.titulo-conteudo {
+	height: 250px;
 }
 
 #produtos h2 {
 	font-family: American;
 	font-size: 4em;
 	text-transform: uppercase;
-
 }
 
 #produtos h3 {
@@ -509,25 +550,16 @@ header nav li {
 	font-size: 2em;
 	text-transform: uppercase;
 	font-weight: bolder;
-	
 }
 
-#conteudos p {
-	font-family: Apple Chancery, cursive;
-	font-size: 1.5em;
-}
-
-
-button a:hover {
-	text-decoration: none;
-}
-
-a.banner{
+#titulo-doce a, #titulo-cachaca a{
 	color: #B43104;
 }
-a:hover.banner {
+
+#titulo-doce a:hover, #titulo-cachaca a:hover {
 	color: darkred;
 	text-decoration: none;
+	transition: 1s  color;
 }
 
 #conteudos h4 {
@@ -535,19 +567,33 @@ a:hover.banner {
 	font-size: 2em;
 }
 
-.titulo1 {
-	font-size: 10em;
+.titulo-conteudo {
+	font-size: 7em;
 	font-family: American;
 	text-shadow: 5px 5px 8px #FFF;
-	border-bottom: 3px solid darkred;
+	border: 20px  solid black;
+	border-right: none;
+	border-left: none;
+	border-image: url('../imagens/cana.jpg')  150 round;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	color: #B43104;
 	font-weight: 900;
 }
 
-
-
+.titulo-conteudo- {
+	font-size: 7em;
+	font-family: American;
+	text-shadow: 5px 5px 8px #FFF;
+	border: 20px  solid black;
+	border-right: none;
+	border-left: none;
+	border-image: url('../imagens/cana.jpg')  150 round;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: #B43104;
+	font-weight: 900;
+}
 
 .h2-produto {
 	font-size: 3.8em;
@@ -569,10 +615,10 @@ a:hover.banner {
 	font-weight: 300;
 }
 
-
 .postagem{
 	background-color: rgb(250,250,250, 0.8);
 	box-sizing: border-box;
+	border: 6px groove darkred;
 	border-radius: 15px;
 	
 } 
@@ -586,188 +632,169 @@ a:hover.banner {
 	color: purple;
 }
 
-//* Rodape *//
+/**produtos**/
 
-footer nav {
-	font-size: 1.4em;
-	font-weight: 900;
+.img-produto {
+	height: 500px;
+}
+
+.img-pinga {
+	height: 500px;
+	width: 300px;
+}
+
+.img-rap {
+	width: 1000px;
+}
+
+#produtos-licores .col-5,
+#produtos-pinga .col-5,
+#produtos-rapaduras .col-5,
+#produtos-melado .col-5 {
+	padding-left: 3px !important;
+	padding-right: 3px !important;
+}
+
+
+			//* Contato *//				
+
+.legenda-titulo {
+	font-family: American;
+	text-transform: uppercase;
+	font-size: 6em;
+	color: #B43104;
+	opacity: 0;
+	animation: opacidade 1s;
+	animation-fill-mode: both;
+	border-top: 1px solid red;
+	border-bottom: 3px solid red;
+}
+
+.legenda-titulo {
+	font-family: American;
+	text-transform: uppercase;
+	font-size: 6em;
+	color: #B43104;
+	opacity: 0;
+	animation: opacidade 1s;
+	animation-fill-mode: both;
+	border-top: 1px solid red;
+	border-bottom: 3px solid red;
+}
+
+.legenda {
+	font-family: Apple Chancery, cursive;
+	font-size: 1.5em;
+	color: #070719;
+	font-weight: 300;
+	background-color: rgb(255,255,255, 0.3);
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 1em darkred;
+	font-style: italic;
+}
+
+.custom-form-success {
+	box-shadow: 0 0 1em #173B0B !important;
+}
+
+.custom-form-danger {
+	box-shadow: 0 0 1em #610B21 !important; 
+}
+
+.modal {
+	top: 200 !important;
+}
+
+			//* Distribuidores *//
+				
+.estado {
+	font-size: 5em;
+	font-family: American;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 50px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: #B43104;
+	cursor: pointer;
+	box-shadow: inset 0 0 1em lightgray, 0 0 1em red;
+	opacity: 0;
+	animation: opacidade 1s;
+	animation-fill-mode: both;
+}
+
+.estado {
+	font-size: 5em;
+	font-family: American;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 50px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: #B43104;
+	cursor: pointer;
+	box-shadow: inset 0 0 1em lightgray, 0 0 1em red;
+	opacity: 0;
+	animation: opacidade 1s;
+	animation-fill-mode: both;
+}
+
+.estado:hover {
+	color: darkred;
+	transition: color 1s;
+}
+				
+.class-card {
+	background-color: rgb(255, 255, 255, 0.8);
+}
+
+.h5-card {
+	font-family: American;
+	font-size: 3em;
+	letter-spacing: 4;
 }
 
 
 
-//* Contato *//
+.tituloDist {
+	font-family: Impact, fantasy;
+	font-size: 2.5em;
+}
 
-				
-				
-				.legenda-titulo {
-					font-family: American;
-					text-transform: uppercase;
-					font-size: 6em;
-					color: #B43104;
-					opacity: 0;
-					animation: opacidade 1s;
-					animation-fill-mode: both;
-					border-top: 3px solid red;
-					border-bottom: 3px solid red;
-				}
+.filtro {
+	height: 100%;
+	
+}
 
-				.legenda-titulo {
-					font-family: American;
-					text-transform: uppercase;
-					font-size: 6em;
-					color: #B43104;
-					opacity: 0;
-					animation: opacidade 1s;
-					animation-fill-mode: both;
-					border-top: 1px solid red;
-					border-bottom: 3px solid red;
-				}
+#aba-lojas {
+	border-left: 2px solid cyan;
+}
 
-				.legenda {
-					font-family: Apple Chancery, cursive;
-					font-size: 1.5em;
-					color: #070719;
-					font-weight: 300;
-					background-color: rgb(255,255,255, 0.3);
-					padding: 10px;
-					border-radius: 10px;
-					box-shadow: 5px 5px 1em darkred;
-					font-style: italic;
-				}
+#aba-lojas .col-6 {
+	padding-left: 4px !important;
+	padding-right: 4px !important;
+}
 
-				@keyframes opacidade {
-					to {
-						opacity: 1;
-					}
-				}
+#conteudos-distribuidores .col-12 {
+	padding-left: 1px !important;
+	padding-right: 1px !important;
+}
 
-				.animacao {
-					opacity: 0;
-					animation: opacidade 1s;
-					animation-fill-mode: both;
-				}
+#pagina-distribuidores .container-fluid {
+	padding-left: 1px !important;
+	padding-right: 1px !important;
+}
 
-				.bann10 {
-					background: url('imagens/back1.png');
-				}
 
-				.margin {
-					margin-top: 100px;
-				}
 
-				.custom-form-success {
-					box-shadow: 0 0 1em #173B0B !important;
-				}
+			
+		
 
-				.custom-form-danger {
-					box-shadow: 0 0 1em #610B21 !important; 
-				}
+			
 
 				
 
-
-			//* Parceiros *//
-
 				
-
-
-				.estado {
-					font-size: 5em;
-					font-family: American;
-					background-color: rgba(255, 255, 255, 0.8);
-					border-radius: 50px;
-					text-transform: uppercase;
-					letter-spacing: 5px;
-					color: #B43104;
-					cursor: pointer;
-					box-shadow: inset 0 0 1em lightgray, 0 0 1em red;
-					opacity: 0;
-					animation: opacidade 1s;
-					animation-fill-mode: both;
-
-				}
-
-				.estado:hover {
-					color: darkred;
-					transition: color 1s;
-				}
-
-				@keyframes opacidade {
-					to {
-						opacity: 1;
-					}
-				}
-
-				.animacao {
-					opacity: 0;
-					animation: opacidade 1s;
-					animation-fill-mode: both;
-				}
-
-				.class-card {
-					background-color: rgb(255, 255, 255, 0.8);
-
-				}
-
-				.titulo-card {
-					font-family: American;
-					font-size: 3em;
-					letter-spacing: 4;
-				}
-
-				.tituloDist {
-					font-family: American;
-					font-size: 3em;
-				}
-
-			/** Produtos **/
-
-				@media (max-width: 475.98px) { 
-
-
-					img.img-produto {
-						height: 300px;
-					}
-
-					img.img-rap {
-						height: 150px;
-					}
-
-				}
-
-				@media (min-width: 475.99px) and (max-width: 575.98px) { 
-
-					img.img-produto {
-						height: 330px;
-					}
-
-					img.img-rap {
-						height: 150px;
-					}
-
-
-				}
-
-				@media (min-width: 576px) and (max-width: 767.98px) { 
-
-					img.img-produto {
-						height: 400px;
-					}
-
-				}
-
-				.img-produto {
-					height: 500px;
-				}
-
-				.img-pinga {
-					height: 500px;
-					width: 300px;
-				}
-
-				.img-rap {
-					width: 1000px;
-				}
+				
 
 				
 
