@@ -164,9 +164,7 @@
 									<h4 class="lead font-weight-bold text-uppercase">Melado natural da cana de açucar cremoso</h4>
 									<p class="lead">Sabor<span class="p-1 text-success font-weight-bold">Puro</span>	
 									</p>	
-									<button class="btn btn-danger btn-lg">
-										<a href="produtos.php?mostra=doce" class="text-white">Saiba mais ...</a>
-									</button>
+									
 								</div>
 								<div class="col-md-11">
 									<img src="imagens/melado.png" class="img-fluid mt-5 ">

@@ -15,6 +15,11 @@
 		margin-right: auto !important;
 	}
 
+	div.margin-logo {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
 	button.btn-menu {
 		font-size: 3.5em;
 	}
@@ -160,6 +165,23 @@
 		animation-fill-mode: both;
 
 	}
+
+	div#aba-lojas {
+		border-left: none;
+	}
+
+	h3.h3-erro {
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		color: red;
+		font-size: 1.4em;
+	}
+
+	h1.h1-erro {
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		color: red;
+		font-style: italic;
+		font-size: 1.8em;
+	}
 }
 @media (min-width: 475.99px) and (max-width: 575.98px) { 
 		/**index**/
@@ -171,6 +193,11 @@
 	}
 
 	button.margin-button {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	div.margin-logo {
 		margin-left: auto !important;
 		margin-right: auto !important;
 	}
@@ -317,6 +344,10 @@
 		animation-fill-mode: both;
 
 	}
+
+	div#aba-lojas {
+		border-left: none;
+	}
 }
 @media (min-width: 576px) and (max-width: 767.98px) { 
 	img.img-produto {
@@ -344,8 +375,9 @@ a {
 
 @font-face {
 	font-family: American;
-	src: url(../fonts/american.woff);
+	src: url('../fonts/american.woff');
 }
+
 
 @keyframes opacidade {
 	to {
@@ -362,7 +394,7 @@ a {
 .custom-font {
 	font-family: american;
 	text-transform: uppercase;
-	color: darkred;
+	color: red;
 }
 
 //*Menu**/
@@ -405,6 +437,11 @@ header nav li {
 .margin-button {
 	margin-left: auto !important;
 	margin-right: 5px;
+}
+
+.margin-logo {
+	margin-right: auto !important;
+	margin-left: 5px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -473,9 +510,10 @@ footer nav {
 /**sobre**/
 
 .h1-sobre {
-	font-family: Impact, fantasy;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	text-transform: uppercase;
-	font-size: 3em;
+	font-size: 2.5em;
+	font-weight: 700;
 }
 
 .h3-sobre {
@@ -483,7 +521,7 @@ footer nav {
 	font-family: american;
 	text-transform: uppercase;
 	font-weight: 900;
-	color: darkred;
+	color: red;
 }
 
 .p-sobre {
@@ -501,7 +539,7 @@ footer nav {
 
 #sobre a {
 	text-decoration: none;
-	color: darkred;
+	color: red;
 }
 
 .bordas-sobre {
@@ -553,7 +591,7 @@ footer nav {
 }
 
 #titulo-doce a, #titulo-cachaca a{
-	color: #B43104;
+	color: red;
 }
 
 #titulo-doce a:hover, #titulo-cachaca a:hover {
@@ -672,6 +710,7 @@ footer nav {
 
 .legenda-titulo {
 	font-family: American;
+	font-weight: 900;
 	text-transform: uppercase;
 	font-size: 6em;
 	color: #B43104;
@@ -683,7 +722,7 @@ footer nav {
 }
 
 .legenda {
-	font-family: Apple Chancery, cursive;
+	font-family: Trebuchet MS, sans-serif;
 	font-size: 1.5em;
 	color: #070719;
 	font-weight: 300;
@@ -756,7 +795,7 @@ footer nav {
 
 
 .tituloDist {
-	font-family: Impact, fantasy;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 2.5em;
 }
 
@@ -766,7 +805,7 @@ footer nav {
 }
 
 #aba-lojas {
-	border-left: 2px solid cyan;
+	border-left: 4px solid #0A122A;
 }
 
 #aba-lojas .col-6 {
@@ -784,6 +823,27 @@ footer nav {
 	padding-right: 1px !important;
 }
 
+.label {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 1.3em;
+	font-weight: bolder;
+	font-style: italic;
+}
+
+.h3-erro {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: red;
+}
+
+.h1-erro {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: red;
+	font-style: italic;
+}
+
+.page-link {
+	color: red !important;
+}
 
 
 			

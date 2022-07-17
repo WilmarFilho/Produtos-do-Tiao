@@ -42,9 +42,7 @@
 										Sabor
 										<span class="text-capitalize p-1 text-black  font-weight-bold"><?=$produto->sabor?></span>
 									</p>		
-									<button class="btn btn-danger btn-sm button-produto">
-										<a href="todos_produtos.php?produto=<?=$produto->id?> " class="text-white">Saiba mais ...</a>
-									</button>							
+															
 								</div>			
 								<div class="col-lg-4 ml-auto col-12 ">
 									<img class = "img-produto img-fluid" src="<?=$produto->img_produto?>"   >
@@ -73,9 +71,7 @@
 										Sabor
 										<span class="text-capitalize p-1 text-black  font-weight-bold"><?=$produto->sabor?></span>
 									</p>		
-									<button class="btn btn-danger btn-sm button-produto">
-										<a href="todos_produtos.php?produto=<?=$produto->id?> " class="text-white">Saiba mais ...</a>
-									</button>			
+											
 								</div>				
 								<div class="col-lg-4 ml-auto col-12 ">
 									<img class = "img-produto img-fluid" src="<?=$produto->img_produto?>"   >
@@ -108,9 +104,7 @@
 										Sabor
 										<span class="text-capitalize p-1 text-black  font-weight-bold"><?=$produto->sabor?></span>
 									</p>		
-									<button class="btn btn-danger btn-sm button-produto">
-										<a href="todos_produtos.php?produto=<?=$produto->id?> " class="text-white">Saiba mais ...</a>
-									</button>	
+									
 								</div>	
 														
 								<div class=" col-12 col-md-8 mx-auto ">
@@ -141,9 +135,7 @@
 										Sabor
 										<span class="text-capitalize p-1 text-black  font-weight-bold"><?=$produto->sabor?></span>
 									</p>	
-									<button class="btn btn-danger btn-sm button-produto">
-										<a href="todos_produtos.php?produto=<?=$produto->id?> " class="text-white">Saiba mais ...</a>
-									</button>				
+												
 								</div>				
 								<div class=" mx-auto col-12 ">
 									<img class = "img-produto img-fluid" src="<?=$produto->img_produto?>"   >

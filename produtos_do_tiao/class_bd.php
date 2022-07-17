@@ -61,10 +61,12 @@
 			
 		}
 
-		public function recuperarLojasBuscadas($nome_loja) {
-			$query = "select * from tb_parceiros where nome ='" . $nome_loja . "' ";
+
+		public function recuperarLojasBuscadas($nome_loja, $cidade) {
+			$query = "select * from tb_parceiros where nome =  :nome_loja and cidade = :cidade  ";
 			$stmt = $this->conexao->prepare($query);
-			/*$stmt->bindValue(':cidade', $cidade);*/
+			$stmt->bindValue(':nome_loja', $nome_loja);
+			$stmt->bindValue(':cidade', $cidade);
 			$stmt->execute();
 			return $stmt->fetchAll(PDO:: FETCH_OBJ);
 			
@@ -83,17 +85,52 @@
 
 		}
 
+		public function Verificaloja() {
+			$query = 'select * from tb_parceiros where nome = :nome';
+			$stmt = $this->conexao->prepare($query);
+			$stmt->bindValue(':nome', $this->nova_loja->__get('nome_loja'));
+
+			$stmt->execute();
+
+			return ($stmt->rowCount());
+		}
+
+		public function VerificaNovaLoja() {
+			$query = 'select * from tb_novos_parceiros where nome_loja = :nome_loja and nome = :nome';
+			$stmt = $this->conexao->prepare($query);
+			$stmt->bindValue(':nome_loja', $this->nova_loja->__get('nome_loja'));
+			$stmt->bindValue(':nome', $this->nova_loja->__get('nome'));
+
+			$stmt->execute();
+
+			return ($stmt->rowCount());
+		}
+
+
 		public function cadastraCliente() {
-			$query = 'insert into tb_clientes (email,  uf, cidade) values (:email, :uf, :cidade);';
+			$query = 'insert into tb_clientes (email,  uf, cidade, assunto) values (:email, :uf, :cidade, :assunto);';
 			$stmt = $this->conexao->prepare($query);
 			$stmt->bindValue(':email', $this->cliente->__get('email'));
 			$stmt->bindValue(':uf', $this->cliente->__get('uf'));
 			$stmt->bindValue(':cidade', $this->cliente->__get('cidade'));
+			$stmt->bindValue(':assunto', $this->cliente->__get('assunto'));
 			
 
 			$stmt->execute();
 
 		}
+
+		public function VerificaCliente() {
+			$query = 'select * from tb_clientes where email = :email ';
+			$stmt = $this->conexao->prepare($query);
+			$stmt->bindValue(':email', $this->cliente->__get('email'));
+	
+
+			$stmt->execute();
+
+			return ($stmt->rowCount());
+		}
+
 
 		public function addLoja() {
 			$query = 'insert into tb_parceiros (nome, uf, cidade, endereço, img) values (:nome, :uf, :cidade, :endereco, :img);';

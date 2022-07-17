@@ -1,5 +1,5 @@
 <nav class="navbar navbar-light mb-5">	 <!-- Barra de Navegação -->
-	<div class="mr-auto"> <!-- Logo  -->
+	<div class="margin-logo"> <!-- Logo  -->
 		<a style="text-indent: -900px;" class="navbar-brand" href="index.php">Produtos do Tião</a>
 		<a class="" href="index.php"> 
 			<img src="imagens/logo.png"  class="logo">

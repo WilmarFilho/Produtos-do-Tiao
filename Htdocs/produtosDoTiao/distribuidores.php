@@ -39,62 +39,72 @@
 				
 			<section id="conteudos-distribuidores" class=" my-5 row container-fluid mx-auto " >	<!-- Inicio do Conteudo -->
 
-						<div class="d-md-none mx-auto">
-							<button class="btn btn-danger" data-toggle="collapse" data-target="#filtro">
+					<?php if(isset($_GET['cidade']) or isset($_GET['nomeloja']) or isset($_GET['letra'])) { ?> <!-- btn filtro -->
+						<div class="d-md-none mr-auto ml-3">
+							<button class="btn btn-outline-danger" data-toggle="collapse" data-target="#filtro">
 								Filtro
 							</button>
 						</div>
+					<?php } ?>
+
 						
-						<div id="filtro" class="col-md-2 filtro collapse d-md-block mx-auto"  > <!-- Filtro -->
+						<div id="filtro" class="col-md-2 filtro collapse d-md-block mx-auto mt-5"> <!-- Filtro -->
 							<?php if(isset($_GET['cidade']) or isset($_GET['nomeloja']) or isset($_GET['letra'])) { ?> <!-- nav (procura loja) -->
-								<label class="text-center">Busque por nome :</label>
-								<form class="input-group" method="GET" action=""  >
+								<label class="label" >Busque por nome :</label>
+								<form class="input-group" method="POST" action="controler_da_view.php?cidade=<?=$_GET['cidade']?>"  >
 									<input class="form-control" type="text" name="nomeloja" placeholder="Nome do distribuidor: ">
 									<div class="input-group-append" >
-										<button class="  btn btn-info"><i class="fa-solid fa-magnifying-glass"></i></button>
+										<button class="  btn btn-outline-danger"><i class="fa-solid fa-magnifying-glass"></i></button>
 									</div>
 								</form>
 
-								<label>Busque pela primeira letra :</label>
+								<label class=" label">Busque pela primeira letra :</label>
 
-								<nav id="filtro_letra" class="mx-auto"  >
-									<ul class="nav flex-column">
-										<li class="" onclick="anterior()"><span  class=""><i class="fa-solid fa-angles-left"></i></span></li>
-										<li class="" onclick="paginacao('1')"><span  class=" text-uppercase" id="letra1">a</span></li>
-										<li class="" onclick="paginacao('2')"><span  class="  text-uppercase" id="letra2">b</span></li>
-										<li class="" onclick="paginacao('3')"><span href="" class=" text-uppercase" id="letra3">c</span></li>
-										<li class="" onclick="paginacao('4')"><span href="" class="  text-uppercase" id="letra4">d</span></li>
-										<li class="" onclick="paginacao('5')"><span href="" class=" text-uppercase" id="letra5">e</span></li>
-										<li class="" onclick="paginacao('6')"><span href="" class="  text-uppercase" id="letra6">f</span></li>
-										<li class="" onclick="paginacao('7')"><span href="" class="  text-uppercase" id="letra7">g</span></li>
-										<li class="" onclick="paginacao('8')"><span href="" class="  text-uppercase" id="letra8">h</span></li>
-										<li class="" onclick="paginacao('9')"><span href="" class="  text-uppercase" id="letra9">i</span></li>
-										<li class="" onclick="paginacao('10')"><span href="" class=" text-uppercase" id="letra10">j</span></li>
-										<li class="" onclick="paginacao('11')"><span href="" class="  text-uppercase" id="letra11">k</span></li>
-										<li class="" onclick="paginacao('12')"><span href="" class="  text-uppercase" id="letra12">l</span></li>
-										<li class="" onclick="paginacao('13')"><span href="" class="  text-uppercase" id="letra13">m</span></li>
-										<li class="" onclick="proximo()"><span  class=""><i class="fa-solid fa-angles-right"></i></span></li>
+								<nav id="filtro_letra" class="mx-auto"   >
+									<ul class="pagination flex-column ">
+										<li class="page-item" onclick="anterior()"><span  class="page-link"><i class="fa-solid fa-angles-left"></i></span></li>
+										<li class="page-item" onclick="paginacao('1')"><span  class="page-link text-uppercase" id="letra1">a</span></li>
+										<li class="page-item" onclick="paginacao('2')"><span  class="page-link  text-uppercase" id="letra2">b</span></li>
+										<li class="page-item" onclick="paginacao('3')"><span href="" class="page-link text-uppercase" id="letra3">c</span></li>
+										<li class="page-item" onclick="paginacao('4')"><span href="" class="page-link  text-uppercase" id="letra4">d</span></li>
+										<li class="page-item" onclick="paginacao('5')"><span href="" class="page-link text-uppercase" id="letra5">e</span></li>
+										<li class="page-item" onclick="paginacao('6')"><span href="" class="page-link  text-uppercase" id="letra6">f</span></li>
+										<li class="page-item" onclick="paginacao('7')"><span href="" class="page-link  text-uppercase" id="letra7">g</span></li>
+										<li class="page-item" onclick="paginacao('8')"><span href="" class="page-link  text-uppercase" id="letra8">h</span></li>
+										<li class="page-item" onclick="paginacao('9')"><span href="" class="page-link  text-uppercase" id="letra9">i</span></li>
+										<li class="page-item" onclick="paginacao('10')"><span href="" class="page-link text-uppercase" id="letra10">j</span></li>
+										<li class="page-item" onclick="paginacao('11')"><span href="" class="page-link  text-uppercase" id="letra11">k</span></li>
+										<li class="page-item" onclick="paginacao('12')"><span href="" class="page-link  text-uppercase" id="letra12">l</span></li>
+										<li class="page-item" onclick="paginacao('13')"><span href="" class="page-link  text-uppercase" id="letra13">m</span></li>
+										<li class="page-item" onclick="proximo()"><span  class="page-link"><i class="fa-solid fa-angles-right"></i></span></li>
 									</ul>
+
+									
+
+
 								</nav>
 
-							<?php } ?> 
-
-							<?php if(isset($_GET['cidade']) or isset($_GET['uf']) or isset($_GET['nomeloja']) or isset($_GET['letra'])) { ?>  <!-- btn voltar -->
-
-								<div class="" >
+								<div class="mt-3 d-none d-md-block" >
 									<div class="">
-										<button onclick="voltar()" class=" btn btn-info  ">Voltar</button>
+										<button onclick="voltar()" class=" btn btn-outline-danger  ">Voltar</button>
 									</div>
 								</div>
 
-							<?php } ?>
-
-							
-
+							<?php } ?> 
 						</div>	 <!-- Fim Filtro -->
 
+					<?php if(isset($_GET['cidade']) or isset($_GET['uf']) or isset($_GET['nomeloja']) or isset($_GET['letra'])) { ?>  <!-- btn voltar -->
+
+						<div class="ml-auto mr-3 d-md-none mt-3" >
+							<div class="">
+								<button onclick="voltar()" class=" btn btn-outline-danger  ">Voltar</button>
+							</div>
+						</div>
+
+					<?php } ?>
+
 						<?php if(!isset($_GET['cidade']) and !isset($_GET['nomeloja']) and !isset($_GET['letra'])) { ?> <!-- Estados -->
-							<div id='nomes-estados' class="mt-5 col-12 row d-flex justify-content-around text-center  ">	
+							<div id='nomes-estados' class="mt-5 col-12 row d-flex justify-content-around text-center mx-auto ">	
 										<?php if(!isset($_GET['uf'])) { ?> <!-- Estados -->
 											<span onclick="recuperaDistribuidoresEstado('go')" class="banner estado p-3 m-2 mt-5 col-lg-3 col-8">Goiás</span>
 											<span onclick="recuperaDistribuidoresEstado('ba')" class="banner estado p-3 m-2 mt-5 col-lg-3 col-8 ">Bahia</span>
@@ -132,34 +142,45 @@
 
 									<?php foreach ($lojas as $indice => $loja) { ?>
 
-										<div class="col-6 col-md-3 " > <!-- Sem filtro letra -->
-											<div class="border border-danger    card arredondamento class-card " style="">
-											  
-												<div class="p-1 m-1">
-
-												  <img class="card-img-top arredondamento " src="<?=$loja->img?>"  alt="">
+											<div class="col-6 col-md-3 " > <!-- Sem filtro letra -->
+												<div class="border border-danger    card arredondamento class-card " style="">
 												  
-													<div class="card-body">
-												    
-													    <h5 class="card-title h5-card text-danger text-center text-uppercase  "><?= $loja->nome ?></h5>
+													<div class="p-1 m-1">
 
-
+													  <img class="card-img-top arredondamento " src="<?=$loja->img?>"  alt="">
+													  
+														<div class="card-body">
 													    
-													    <div class="mt-4 pb-3 d-flex flex-column ">
+														    <h5 class="card-title h5-card text-danger text-center text-uppercase  "><?= $loja->nome ?></h5>
 
-														     <h5 class=" " style="font-family: Apple Chancery, cursive; font-size: 1.3em;">Endereço :</h5>
 
-															 <p class="  lead " style="font-size: 1.2em"><?= $loja->endereço ?></p>
+														    
+														    <div class="mt-4 pb-3 d-flex flex-column ">
+
+															     <h5 class=" " style="font-family: Apple Chancery, cursive; font-size: 1.3em;">Endereço :</h5>
+
+																 <p class="  lead " style="font-size: 1.2em"><?= $loja->endereço ?></p>
+															</div>
+													    
 														</div>
-												    
+
 													</div>
 
-												</div>
+												</div> 
+											</div>		
 
-											</div> 
-										</div>		
+					<?php } ?> <?php } ?> <?php } ?> 
 
-					<?php } ?> <?php } ?> <?php } ?>
+					<?php if(isset($_GET['cidade']) or isset($_GET['nomeloja']) or isset($_GET['letra']) and empty($lojas)) { ?>
+						<?php if(empty($lojas)) { ?>
+							<div class="mx-auto text-center">
+								<h1 class="h1-erro"> Atualmente não temos nenhum distribuidor dessa cidade cadastrado <i class="fa-solid fa-circle-exclamation"></i></h1>
+								<h3 class="h3-erro">Volte mais tarde.</h3>
+								<button onclick="voltar()" class=" btn btn-warning  ">Voltar </button>
+							</div>
+								
+
+					<?php  } ?> <?php  } ?> 
 
 
 							<?php  if (isset($_GET['letra'])) { ?>

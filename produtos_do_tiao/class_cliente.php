@@ -5,6 +5,7 @@
 		private $uf;
 		private $cidade;
 		private $email; 
+		private $assunto; 
 
 		public function __set($atributo, $valor) {
 			$this->$atributo = $valor;
