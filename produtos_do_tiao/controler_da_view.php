@@ -46,13 +46,26 @@
 	
 		$bd->__set('loja', $loja);
 		
-		$lojas =  $bd->recuperarLojas($_GET['cidade']);
+		$lojas =  $bd->recuperarLojas($_GET['cidade'], $_GET['p']);
+
+		
+
+		if (isset($_GET['letra']) and $_GET['letra'] != '*') {
+			$total_lojas['total'] = 5;
+		}
+
+		else {
+			$total_lojas = $bd->recuperarTotalLojas($_GET['cidade']);
+		}
+
+	
+
 
 
 	}
 		
 		
-	if(isset($_GET['nomeloja'])) {
+	if(isset($_GET['nomeloja']) and $_GET['nomeloja'] != '') {
 		$loja = new Loja();
 		$conexao = new Conexao();
 		$produto = new Produto();
@@ -66,12 +79,15 @@
 		
 		$nome_loja = $_GET['nomeloja'];
 		$cidade = $_GET['cidade'];
-		$lojas =  $bd->recuperarLojasBuscadas($nome_loja, $cidade);
+
+
+		$lojas =  $bd->recuperarLojasBuscadas($nome_loja, $cidade, $_GET['p']);
+		$total_lojas = $bd->recuperarTotalLojasPorNome($nome_loja, $cidade);
 		
 	}
 
 	if (isset($_POST['nomeloja'])) {
-		$url = 'location: distribuidores.php?cidade=' . $_GET['cidade'] . '&nomeloja=' . $_POST['nomeloja'] ;
+		$url = 'location: distribuidores.php?p=1&letra=*&cidade=' . $_GET['cidade'] . '&nomeloja=' . $_POST['nomeloja'] ;
 		header($url);
 	}
 

@@ -90,6 +90,32 @@
 									</div>
 								</div>
 
+								<?php $total_paginas =  ceil($total_lojas['total'] / 8); ?>
+
+
+								<?php if($total_paginas >= 2)  { ?>
+
+									<label class="label mt-5">Páginas: </label>
+
+									<nav aria-label="Page navigation example" class=" mx-auto">
+									  <ul class="pagination flex-column">
+									    
+									    <li class="page-item"><a class="page-link" href="?cidade=<?=$_GET['cidade']?>&p=1&letra=<?=$_GET['letra']?>&nomeloja=<?=$_GET['nomeloja']?>">Primeira</a></li>
+									    
+									 
+									    <?php for($i = 1; $i <= $total_paginas ; $i++) { ?>
+									    	<li class="page-item"><a class="page-link" href="?cidade=<?=$_GET['cidade']?>&p=<?=$i?>&letra=<?=$_GET['letra']?>&nomeloja=<?=$_GET['nomeloja']?>"><?=$i?></a></li>
+									   	<?php } ?>
+									  
+									    
+									    <li class="page-item"><a class="page-link" href="?cidade=<?=$_GET['cidade']?>&p=<?=$total_paginas?>&letra=<?=$_GET['letra']?>&nomeloja=<?=$_GET['nomeloja']?>">Ultima</a></li>
+									  </ul>
+									</nav>
+
+								<?php } ?>
+
+								
+
 							<?php } ?> 
 						</div>	 <!-- Fim Filtro -->
 
@@ -116,12 +142,13 @@
 											<span onclick="recuperaDistribuidoresCidade('Goiania', 'goias')" class="banner estado p-3 m-2 mt-5  col-lg-3 col-8">Goiânia</span>
 											<span onclick="recuperaDistribuidoresCidade('Trindade', 'goias')" class="banner estado p-3 m-2 mt-5  col-lg-3 col-8">Trindade</span>
 											<span onclick="recuperaDistribuidoresCidade('aparecida de goiania', 'goias')" class="banner estado p-3 m-2 mt-5  col-lg-3 col-8">Aparecida de Goiânia</span>
+											<span  onclick="recuperaDistribuidoresCidade('claudinapolis', 'goias')" class="banner estado p-3 m-2 mt-5  col-lg-3 col-8">Claudinápolis</span>
 										<?php } ?>
 
 										<?php if(isset($_GET['uf']) and $_GET['uf'] == 'mt') { ?> <!-- Cidades -->
 
-											<span onclick="recuperaDistribuidoresCidade('mato', 'mato grosso')" class="banner estado p-3 m-2 mt-5  col-md-3 col-8">Campinas</span>
-											<span onclick="recuperaDistribuidoresCidade('mato', 'mato grosso')" class="banner estado p-3 m-2 mt-5  col-md-3 col-8">Belem</span><
+											<span onclick="recuperaDistribuidoresCidade('mato', 'mato grosso')" class="banner estado p-3 m-2 mt-5  col-md-3 col-8">Campinapolis</span>
+											<span onclick="recuperaDistribuidoresCidade('mato', 'mato grosso')" class="banner estado p-3 m-2 mt-5  col-md-3 col-8">Nova Xavantina</span><
 
 										<?php } ?>
 
@@ -138,7 +165,7 @@
 
 						<div id="aba-lojas"  class="col-md-10 col-12 animacao row  mt-5  mx-auto"> <!-- Inicio Lojas -->
 
-								<?php if(!isset($_GET['letra'])) { ?>
+								<?php if(isset($_GET['letra']) and $_GET['letra'] == '*') { ?>
 
 									<?php foreach ($lojas as $indice => $loja) { ?>
 
@@ -183,7 +210,7 @@
 					<?php  } ?> <?php  } ?> 
 
 
-							<?php  if (isset($_GET['letra'])) { ?>
+							<?php  if (isset($_GET['letra']) and $_GET['letra'] != '*') { ?>
 								
 								<?php foreach ($lojas as $indice => $loja) { ?>
 
@@ -220,8 +247,35 @@
 										</div>
 
 							<?php } ?> <?php } ?>  <?php } ?>
+
+								<?php if($total_paginas >= 2)  { ?>
+
+									<div class="row col-12">
+
+										<label class="label mt-5 d-md-none col-12 text-center">Páginas: </label>
+
+										<nav aria-label="Page navigation example " class="col-10 d-md-none ml-5">
+										  <ul class="pagination flex-column mt-5">
+										    
+										    <li class="page-item"><a class="page-link" href="?cidade=<?=$_GET['cidade']?>&pagina=1&letra=<?=$_GET['letra']?>&nomeloja=<?=$_GET['nomeloja']?>">Primeira</a></li>
+										    
+										 
+										    <?php for($i = 1; $i <= $total_paginas ; $i++) { ?>
+										    	<li class="page-item"><a class="page-link" href="?cidade=<?=$_GET['cidade']?>&p=<?=$i?>&letra=<?=$_GET['letra']?>&nomeloja=<?=$_GET['nomeloja']?>"><?=$i?></a></li>
+										   	<?php } ?>
+										  
+										    
+										    <li class="page-item"><a class="page-link" href="?cidade=<?=$_GET['cidade']?>&p=<?=$total_paginas?>&letra=<?=$_GET['letra']?>&nomeloja=<?=$_GET['nomeloja']?>">Ultima</a></li>
+										  </ul>
+										</nav>
+
+									</div>
+
+								<?php } ?>
 							
 						</div> <!-- Fim Lojas -->	
+
+
 
 			</section> <!-- Fim do Conteudo -->
 

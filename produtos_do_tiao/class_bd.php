@@ -52,8 +52,14 @@
 			return $stmt->fetchAll(PDO:: FETCH_OBJ);
 		}
 
-		public function recuperarLojas($cidade) {
-			$query = "select * from tb_parceiros where cidade ='" . $cidade . " ' ORDER BY nome ASC ";
+		public function recuperarLojas($cidade, $pagina) {
+			
+			$lojas_por_pagina = 8;
+			$deslocamento = ($pagina - 1) * $lojas_por_pagina;
+			
+
+
+			$query = "select * from tb_parceiros where cidade ='" . $cidade . " ' ORDER BY nome ASC limit " . $lojas_por_pagina . " offset " . $deslocamento;
 			$stmt = $this->conexao->prepare($query);
 			/*$stmt->bindValue(':cidade', $cidade);*/
 			$stmt->execute();
@@ -62,14 +68,31 @@
 		}
 
 
-		public function recuperarLojasBuscadas($nome_loja, $cidade) {
-			$query = "select * from tb_parceiros where nome =  :nome_loja and cidade = :cidade  ";
+		public function recuperarLojasBuscadas($nome_loja, $cidade, $pagina) {
+
+			$query = "select * from tb_parceiros where nome like :nome_loja and cidade = :cidade  ";
 			$stmt = $this->conexao->prepare($query);
-			$stmt->bindValue(':nome_loja', $nome_loja);
+			$stmt->bindValue(':nome_loja', '%' . $nome_loja . '%');
 			$stmt->bindValue(':cidade', $cidade);
 			$stmt->execute();
 			return $stmt->fetchAll(PDO:: FETCH_OBJ);
 			
+		}
+
+		public function recuperarTotalLojas($cidade) {
+			$query = "select count(*) as total from tb_parceiros where cidade ='" . $cidade . " ' ORDER BY nome ASC ";
+			$stmt = $this->conexao->prepare($query);
+			$stmt->execute();
+			return $stmt->fetch(PDO:: FETCH_ASSOC);
+		}
+
+		public function recuperarTotalLojasPorNome($nome_loja, $cidade) {
+			$query = "select count(*) as total from tb_parceiros where nome like :nome_loja and cidade = :cidade  ";
+			$stmt = $this->conexao->prepare($query);
+			$stmt->bindValue(':nome_loja', '%' . $nome_loja . '%');
+			$stmt->bindValue(':cidade', $cidade);
+			$stmt->execute();
+			return $stmt->fetch(PDO:: FETCH_ASSOC);
 		}
 
 		public function cadastraLoja() {

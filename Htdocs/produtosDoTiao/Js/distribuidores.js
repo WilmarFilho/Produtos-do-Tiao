@@ -7,7 +7,7 @@ let recuperaDistribuidoresEstado = (uf) => {
 }
 
 let recuperaDistribuidoresCidade = (cidade, estado) => {
-	window.location.href = 'distribuidores.php?cidade=' + cidade 
+	window.location.href = 'distribuidores.php?letra=*&nomeloja=&p=1&cidade=' + cidade 
 }
 
 let paginacao = (id) => {
@@ -17,7 +17,7 @@ let paginacao = (id) => {
 					
 	let letra = document.getElementById(indice).innerHTML 
 				
-	window.location.href = 'distribuidores.php?letra=' + letra + '&cidade=' + cidade
+	window.location.href = 'distribuidores.php?nomeloja=&p=1&letra=' + letra + '&cidade=' + cidade
 }
 
 let proximo = () => {
