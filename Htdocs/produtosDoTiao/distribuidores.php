@@ -143,6 +143,7 @@
 											<span onclick="recuperaDistribuidoresCidade('Trindade', 'goias')" class="banner estado p-3 m-2 mt-5  col-lg-3 col-8">Trindade</span>
 											<span onclick="recuperaDistribuidoresCidade('aparecida de goiania', 'goias')" class="banner estado p-3 m-2 mt-5  col-lg-3 col-8">Aparecida de Goiânia</span>
 											<span  onclick="recuperaDistribuidoresCidade('claudinapolis', 'goias')" class="banner estado p-3 m-2 mt-5  col-lg-3 col-8">Claudinápolis</span>
+											<span  onclick="recuperaDistribuidoresCidade('itauçu', 'goias')" class="banner estado p-3 m-2 mt-5  col-lg-3 col-8">Itauçu</span>
 										<?php } ?>
 
 										<?php if(isset($_GET['uf']) and $_GET['uf'] == 'mt') { ?> <!-- Cidades -->
