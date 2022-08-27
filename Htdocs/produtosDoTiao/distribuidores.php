@@ -95,9 +95,9 @@
 
 								<?php if($total_paginas >= 2)  { ?>
 
-									<label class="label mt-5">Páginas: </label>
+									<label class="label mt-5 d-none d-md-block">Páginas: </label>
 
-									<nav aria-label="Page navigation example" class=" mx-auto">
+									<nav aria-label="Page navigation example" class=" mx-auto d-none d-md-block">
 									  <ul class="pagination flex-column">
 									    
 									    <li class="page-item"><a class="page-link" href="?cidade=<?=$_GET['cidade']?>&p=1&letra=<?=$_GET['letra']?>&nomeloja=<?=$_GET['nomeloja']?>">Primeira</a></li>
