@@ -1,5 +1,6 @@
 <?php 
 	require_once	'controler_da_view.php';
+	$total_paginas = 0;
 ?>
 	<html>
 		<head lang="pt-br">	

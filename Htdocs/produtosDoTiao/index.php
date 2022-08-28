@@ -69,7 +69,7 @@
 						<p class="p-sobre">Cada produto feito artesanalemnte e com todo cuidado para nosso clientes e distribuidores, desde o corte da cana até a embalagem. Temos pingas, licores, rapaduras e etc</p>
 						<h3 class="h3-sobre">Atendimento</h3>
 						<p class="p-sobre">Para nós o cliente vem em primeiro lugar ! Temos nossas redes sociais <br>
-								<a href="" class="btn btn-danger btn-sm">
+								<a href="https://wa.me/message/IDDH3GED7PCCL1" class="btn btn-danger btn-sm">
 									<i class="fa-brands fa-whatsapp text-white fa-2x"></i>
 								</a> <a href="https://www.instagram.com/tiao.produtos/" class="btn btn-danger btn-sm">
 									<i class="fa-brands fa-instagram text-white fa-2x"></i>

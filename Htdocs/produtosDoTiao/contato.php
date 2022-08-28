@@ -36,7 +36,7 @@
 						<div class="legenda col-9 col-md-6" >
 							<p class="">Seja mais um parceiro nosso e tenha os Produtos do Tião em sua loja</p>
 							<p class="">Se cadastre ou entre em contato pelo WhatsApp
-								<a href="" class="btn btn-danger">
+								<a href="https://wa.me/message/IDDH3GED7PCCL1" class="btn btn-danger">
 									<i class="fa-brands fa-whatsapp text-white fa-2x"></i>
 								</a>
 							</p>

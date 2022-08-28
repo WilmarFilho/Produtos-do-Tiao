@@ -24,128 +24,89 @@
 			</header> <!-- Fim do topo -->
 
 		<?php if($_GET['mostra'] == 'cachaça' or $_GET['mostra'] == 'todos' ) { ?>
-			<article id="titulo-cachaca" class='bann5 titulo-conteudo  mb-5 d-flex align-items-center justify-content-center' >  <!-- Titulo pinga -->			
+			<article id="titulo-cachaca" class='bann5 titulo-conteudo  mb-5 d-flex align-items-center justify-content-center' >  <!-- Titulo pinga -->
 				<div>					
-					<h1>Pingas</h1>
+					<span>Cachaças do Tião</span>
 				</div>
 			</article>  <!-- Fim Titulo pinga -->	
 
 			<section id="produtos-pinga" class="container-fluid">	<!-- Inicio dos produtos-pinga -->
-				<section class="bann1  row my-3 justify-content-around" >	
-					<?php foreach($produtosPinga as $indice => $produto) {  ?>
-						<div class="col-md-5 col-5">
-							<article class="row  text-center   postagem my-3 p-1" >	
-								<div class="col-lg-7 col-12 p-3">
-									<h2 class="h2-produto text-danger text-uppercase"><?=$produto->nome?></h2>		
-									<h4 class="h4-produto lead font-weight-bold text-uppercase"><?=$produto->descricao?></h4>		
-									<p class=" p-produto">		
-										Sabor
-										<span class="text-capitalize p-1 text-black  font-weight-bold"><?=$produto->sabor?></span>
-									</p>		
-															
-								</div>			
-								<div class="col-lg-4 ml-auto col-12 ">
-									<img class = "img-produto img-fluid" src="<?=$produto->img_produto?>"   >
+				<section class="bann1  row my-3 justify-content-around" >				
+						<div class="col-12 col-lg-6 mt-1 text-center  p-1 align-self-center d-flex flex-column">
+							<div class=" texto-produto m-3"> 
+								<h3 class="h3-produto">Caninha do Tião no 12</h3>
+								<p class=" p-produto">Cachaças artesanais em versão Prata feita a partir da destilação da garapa e também a versão Ouro feita a partir do envelhecimento na madeira da caninha do tião original. Ambas nos tamanhos mini </p>
+								<div class="row">
+									<img class="col-6 d-none d-md-block" src="imagens/pinga.png" height="400"> 
+									<img class="col-6 d-none d-md-block" src="imagens/mini-pinga.png" height="300">
+									<img class="col-6 d-md-none" src="imagens/pinga.png" > 
+									<img class="col-6 d-md-none" src="imagens/mini-pinga.png">
 								</div>
-							</article> 
+								
+								
+								<h3 class="h3-produto">Licor do Tião no 12</h3>
+								<p class="p-produto">Diversos licores, ambos feitos a partir da caninha do tião envelhecida na jabuticaba, rapadura e no tamarindo</p>
+								<div class="row">
+									<img class="col-6" src="imagens/licor.png"> 
+									<img class="col-6" src="imagens/licores.png">
+								</div>
+							</div>
 						</div>
-					<?php } ?>
+
+						<div class="col-12 col-lg-6 row py-4  mx-auto galeria" >
+							<div class=" col-5 my-2"><img src="imagens/pinga/img3.jpeg" class="img-fluid" ></div>
+							<div class=" col-7 my-2"><img src="imagens/licor/img2.jpeg" class="img-fluid" ></div>
+							<div class="col-7 my-2"><img src="imagens/pinga/img5.jpeg"  class="img-fluid" ></div>
+							<div class=" col-5 my-2"><img src="imagens/mini-pinga/img1.jpeg" class="img-fluid" ></div>	
+						</div>												
 				</section>
 			</section>	 <!-- Fim dos produtos-pinga -->
+	
+		
 
-			<article id="titulo-cachaca" class='bann5 titulo-conteudo  mb-5 d-flex align-items-center justify-content-center' >  <!-- Titulo licores -->			
-					<div>					
-						<h1>Licores</h1>
-					</div>
-			</article>  <!-- Fim Titulo licores -->	
-
-			<section id="produtos-licores" class="container-fluid">	<!-- Inicio dos produtos-licores -->
-				<section id="licor" class="bann2 row justify-content-around arredondamento my-3">
-					<?php foreach($produtosLicor as $indice => $produto) { ?>
-						<div class="col-5">
-							<article class="row  text-center   postagem my-3 p-1" >		
-								<div class="col-lg-7 col-12 p-3">
-									<h2 class="h2-produto text-danger text-uppercase"><?=$produto->nome?></h2>		
-									<h4 class="h4-produto lead font-weight-bold text-uppercase"><?=$produto->descricao?></h4>		
-									<p class=" p-produto">	
-										Sabor
-										<span class="text-capitalize p-1 text-black  font-weight-bold"><?=$produto->sabor?></span>
-									</p>		
-											
-								</div>				
-								<div class="col-lg-4 ml-auto col-12 ">
-									<img class = "img-produto img-fluid" src="<?=$produto->img_produto?>"   >
-								</div>
-							</article> 
-						</div>
-					<?php } ?>
-				</section>
-			</section> 	<!-- Fim dos produtos-licores -->
+			
 
 		<?php } ?>
 
 		<?php if($_GET['mostra'] == 'doce' or $_GET['mostra'] == 'todos' ) { ?>
 
-			<article id="titulo-cachaca" class='bann5 titulo-conteudo-  mb-5 d-flex align-items-center justify-content-center'>  <!-- Titulo rapaduras -->			
+			<article id="titulo-cachaca" class='bann5 titulo-conteudo  mb-5 d-flex align-items-center justify-content-center'>  <!-- Titulo doces -->
 				<div>					
-					<h1>Rapaduras</h1>
+					<span>Doces do Tião</span>
 				</div>
-			</article>  <!-- Fim Titulo rapaduras -->	
+			</article>  <!-- Fim Titulo doces -->	
 
-			<section id="produtos-rapaduras" class="container-fluid">	<!-- Inicio dos produtos-rapaduras -->
-				<section id='rapadura' class="bann3 row my-3 justify-content-around">
-					<?php foreach($produtosRapadura as $indice => $produto) { ?>
-						<div class="col-md-5 col-5">
-							<article class="row  text-center   postagem my-3 p-1" >		
-								<div class="col-12 p-3">
-									<h2 class="h2-produto text-danger text-uppercase"><?=$produto->nome?></h2>		
-									<h4 class="h4-produto lead font-weight-bold text-uppercase"><?=$produto->descricao?></h4>		
-									<p class=" p-produto">		
-										Sabor
-										<span class="text-capitalize p-1 text-black  font-weight-bold"><?=$produto->sabor?></span>
-									</p>		
-									
-								</div>	
-														
-								<div class=" col-12 col-md-8 mx-auto ">
-									<img class = "img-rap img-fluid" src="<?=$produto->img_produto?>"   >
-								</div>
-
-							</article> 
+			<section id="produtos-rapaduras" class="container-fluid">	<!-- Inicio dos produtos-doces -->
+				<section id='rapadura' class="bann2 row my-3 justify-content-around">
+						<div class="col-12 col-lg-6 row py-4  mx-auto galeria" >
+							<div class=" col-5 my-2"><img src="imagens/rapadura/img3.jpeg" class="img-fluid" ></div>
+							<div class=" col-7 my-2"><img src="imagens/rapadura/img2.jpeg" class="img-fluid" ></div>
+							<div class="col-7 my-2"><img src="imagens/rapadura/img4.jpeg"  class="img-fluid" ></div>
+							<div class=" col-5 my-2"><img src="imagens/rapadura/img1.jpeg" class="img-fluid" ></div>
+							
 						</div>
-					<?php } ?>
-				</section>
-			</section> <!-- Fim dos produtos-rapaduras -->
 
-			<article id="titulo-cachaca" class='bann5 titulo-conteudo  mb-5 d-flex align-items-center justify-content-center' >  <!-- Titulo melado -->			
-					<div>					
-						<h1>Melados</h1>
-					</div>
-			</article>  <!-- Fim Titulo melado -->	
-
-			<div id="produtos-melado" class="container-fluid">	<!-- Inicio dos produtos-melado -->
-				<section id="conteudo" class="bann4 row justify-content-around  my-3">
-					<?php foreach($produtosMelado as $indice => $produto) { ?>
-						<div class="col-md-6 col-8">
-							<article class="row  text-center   postagem my-3 p-1" >		
-								<div class=" col-12 p-3">
-									<h2 class="h2-produto text-danger text-uppercase"><?=$produto->nome?></h2>					
-									<h4 class="h4-produto lead font-weight-bold text-uppercase"><?=$produto->descricao?></h4>	
-									<p class=" p-produto">
-										Sabor
-										<span class="text-capitalize p-1 text-black  font-weight-bold"><?=$produto->sabor?></span>
-									</p>	
-												
-								</div>				
-								<div class=" mx-auto col-12 ">
-									<img class = "img-produto img-fluid" src="<?=$produto->img_produto?>"   >
+						<div class="col-12 col-lg-6 mt-1 text-center  p-1 align-self-center d-flex flex-column">
+							<div class=" texto-produto m-3"> 
+								<h3 class="h3-produto">Rapadura do Tião</h3>
+								<p class=" p-produto">Rapaduras e mini rapaduras de diversos sabores, entre eles pura, amendoim, leite e gengibre. Além da rapadura de mamão exclusiva no tamanho grande </p>
+								<div class="row justify-content-center">
+									<img class="col-7" src="imagens/rap.png" > 
 								</div>
-
-							</article> 
+								
+								
+								<h3 class="h3-produto">Melado do Tião</h3>
+								<p class="p-produto">Oferecemos também o melado do tião no sabor puro </p>
+								<div class="row justify-content-center">
+									<img class="col-7" src="imagens/melado.png">
+								</div>
+							</div>
 						</div>
-					<?php } ?>
 				</section>
-			</div> <!-- Fim dos produtos-melado -->
+			</section> <!-- Fim dos produtos-doces -->
+
+			
+
 
 		<?php } ?>
 			
